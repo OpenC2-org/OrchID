@@ -42,7 +42,7 @@ OrchID runs with the standard runserver command:
 
 This project is a fully fledged deployment, but the "orchid" folder should stand alone as an importable django app if you want to use it in your project.
 
-Once running an OpenC2 POST endpoint will be available on http://<your_ip>/openc2/
+Once running an OpenC2 POST endpoint will be available on http://your-ip-address/openc2/
 
 ## Custom Config
 
