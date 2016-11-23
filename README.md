@@ -9,6 +9,7 @@ In it's current state it is a fairly light weight Django app with few dependenci
 
 	pip install requests
    	pip install django==1.10.2
+	pip install jsonschema
 
 OrchID will require database config, although it its current state the database is not used, later revisions will use it for storing user credentials when I add authentication, so its best you set one up now. The project comes shipped with the settings necessary for setting up MySQL, but any Django database engine should work fine, you will just need to create a database called "orchid" and a user to connect to it.
 
