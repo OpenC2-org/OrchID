@@ -1,0 +1,20 @@
+{  
+   "action":"deny",
+   "target":{  
+      "type":"cybox:Address",
+      "specifiers":{  
+         "IP_Address":{  
+            "Address_Value":"123.123.123.123"
+         }
+      }
+   },
+   "actuator":{  
+      "type":"network-firewall",
+      "specifiers":{  
+         "hostname":"r1_juniper"
+      }
+   },
+   "modifiers":{  
+
+   }
+}

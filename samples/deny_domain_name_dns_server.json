@@ -1,0 +1,19 @@
+{  
+   "action":"deny",
+   "target":{  
+      "type":"cybox:Domain_Name",
+      "specifiers":{  
+         "value":"www.test.com",
+         "type":"FQDN"
+      }
+   },
+   "actuator":{  
+      "type":"process-dns-server",
+      "specifiers":{  
+         "hostname":"dns_server_1"
+      }
+   },
+   "modifiers":{  
+
+   }
+}
