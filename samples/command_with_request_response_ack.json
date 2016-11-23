@@ -1,0 +1,22 @@
+{  
+   "action":"deny",
+   "target":{  
+      "type":"cybox:Address",
+      "specifiers":{  
+         "IP_Address":{  
+            "Address_Value":"123.123.123.123"
+         }
+      }
+   },
+   "actuator":{  
+      "type":"network-firewall",
+      "specifiers":{  
+         "hostname":"r1_juniper"
+      }
+   },
+   "modifiers":{  
+      "response":"ack",
+      "respond_to":"http://my_open_c2_server/openc2_endpoint/",
+      "command_ref":"88309749023789347"
+   }
+}

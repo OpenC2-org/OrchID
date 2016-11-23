@@ -1,0 +1,11 @@
+{  
+   "action":"response",
+   "modifiers":{  
+      "command-ref":"test",
+      "type":"ack",
+      "value":"ack"
+   },
+   "target":{  
+      "type":"openc2:Data"
+   }
+}
