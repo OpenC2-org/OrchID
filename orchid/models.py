@@ -34,7 +34,6 @@ class OpenC2Action(object):
 		# Specifier In message		|			  Match					  |				Match - Generic Profile - But use profile logic to check specifiers (saves writing a profile for every firewall etc)
 		# Specifier Not In message	|			  No Match   			  |				Match
 		
-
 		# Check actions
 		if function_signature["action"] != message["action"]:
 
