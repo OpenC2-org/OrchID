@@ -32,6 +32,7 @@ OPENC2_PROFILES = [
     'example_process_dns_server_bind.py',
     'example_network_firewall_juniper.py',
     'example_locate_address.py',
+    'example_address_whois.py',
     'example_response.py',
 ]
 
