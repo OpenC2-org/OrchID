@@ -13,6 +13,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponseRedirect, HttpResponse
 
 from validators import openc2_validatior
+from decorators import http_basic_auth
 
 from profiles import Dispatcher
 import json
@@ -27,6 +28,7 @@ import response
 # Create a single dispatcher on load
 dispatcher = Dispatcher()
 
+@http_basic_auth
 @csrf_exempt
 def service_router(request):
 
