@@ -48,7 +48,6 @@ def make_response_message(command_ref, com_type, value):
 	msg["modifiers"]["type"] = com_type
 	msg["modifiers"]["value"] = value
 
-
 	return json.dumps(msg)
 
 def respond_ack(modifiers):
@@ -73,3 +72,8 @@ def respond_ack(modifiers):
 
 		logger.error("A response was requested, but didnt have the required fields to facilate response.")
 
+
+def respond_message(message,respond_to_url):
+
+	logger.info("Send message %s to %s" % (message,respond_to_url))
+	req = requests.post(respond_to_url, data=message, verify=False)

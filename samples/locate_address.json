@@ -1,0 +1,24 @@
+{
+    "action": "LOCATE", 
+    "actuator": {
+        "specifiers": {}, 
+        "type": "process-location-service"
+    }, 
+    "modifiers": {
+        "respond-to":"http://localhost/openc2",
+        "command-ref":1
+    }, 
+    "target": {
+        "specifiers": {
+                "id": "example:Observable-5a014655-0491-4e4f-b7ba-3343b4fcb7dc", 
+                "object": {
+                    "id": "example:Address-aa691157-e74c-4030-9e3d-7e9642db33bd", 
+                    "properties": {
+                        "address_value": "123.123.123.123", 
+                        "xsi:type": "AddressObjectType"
+                    }
+                }
+        }, 
+        "type": "cybox:AddressObjectType"
+    }
+}

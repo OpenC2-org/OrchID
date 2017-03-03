@@ -54,6 +54,9 @@ class Dispatcher(object):
 		logger.debug("Dispatcher called")
 		capable_handlers = []
 
+		# Force the action string to lowercase
+		message['action'] =  message['action'].lower()
+
 		# Check action / target type
 		if message["action"] == 'query' and message["target"]["type"] == 'openc2:openc2':
 			return HttpResponse(self.capabilities(),status=200)
