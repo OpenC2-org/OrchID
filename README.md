@@ -36,7 +36,7 @@ DATABASES = {
 
 For future reference you may also need to run the following when I get started adding the database functions:
 
-```python
+```sh
 python manage.py makemigrations
 python manage.py migrate
 ```
@@ -45,7 +45,7 @@ python manage.py migrate
 ---
 OrchID runs with the standard runserver command:
 
-```python
+```sh
 python manage.py runserver 0.0.0.0:8000
 ```
 
@@ -116,7 +116,7 @@ These are just to showcase how I envision it working, as no actuator logic is im
 
 I have added two unit tests; they check that JSON samples in the `./sample` folder are syntactically valid, then pass them through the command dispatcher. The tests fail if the dispatcher doesn't return a `200` _(OK)_ status code. Tests can be run with:
 
-```python
+```sh
 python manage.py test orchid
 ```
 
